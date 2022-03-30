@@ -13,25 +13,38 @@ namespace AnalisadorLexico
         
         public string Entrada(string code)
         {
-            int tamanho = code.Length;
+            string aux = "";
+            int tamanho = 0;
+            foreach (var item in code.ToCharArray())
+            {
+                aux += item;
+                tamanho++;
+            }
+            
             int index = 0;
             string token = "";
             while (tamanho > 0)
             {
                 string palavra = "";
                 int i = index;
-                while(!string.IsNullOrWhiteSpace(code[i].ToString()))
+                int j = 0;
+
+                while(!string.IsNullOrWhiteSpace(code[i].ToString()) && !isOperador(code[i].ToString()) )
                 {
                     palavra += code[i];
                     i++;
                 }
                 if (isKeywords(palavra))
                 {
-                    token +=  "<" + palavra.ToUpper() + ">";
+                    token +=  "<" + palavra.ToUpper() + " >";
                 }
                 if (isOperador(palavra))
                 {
-                    token += "<" + palavra.ToUpper() + ">";
+                    token += "< DELOP, " + palavra.ToUpper() + " >";
+                }
+                if (code[i] == '\n')
+                {
+                    token += "\n";
                 }
 
                 index++;
