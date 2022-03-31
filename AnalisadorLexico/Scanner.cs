@@ -10,6 +10,8 @@ namespace AnalisadorLexico
     {
         static string[] KeyWords = { "IF", "THEN", "ELSE", "WHILE", "INT", "VOID", "MAIN" };
         static string[] Operador = { "(", ")", "{", "}", ",",  }; //ver se a virgula é um operador
+        static string[] OperadorRelop = { "<", "<=", "=", "=>", ">", "<>", "&", "||" };
+        static string[] OperadorMatop = { "+", "-", "*", "/", };
         
         public string Entrada(string code)
         {
@@ -23,32 +25,33 @@ namespace AnalisadorLexico
             
             int index = 0;
             string token = "";
-            while (tamanho > 0)
+            while (index < tamanho)
             {
                 string palavra = "";
-                int i = index;
-                int j = 0;
 
-                while(!string.IsNullOrWhiteSpace(code[i].ToString()) && !isOperador(code[i].ToString()) )
+                while( (code[index] != ' ') && 
+                    (!isOperador(code[index].ToString()) && 
+                    (!code[index].Equals('\n') ) && 
+                    (!isOperadorRelop(code[index].ToString() ) ) && 
+                    (!isOperadorMatop(code[index].ToString() ) ) ) )
                 {
-                    palavra += code[i];
-                    i++;
+                    palavra += code[index].ToString();
+                    index++;
                 }
+
                 if (isKeywords(palavra))
                 {
-                    token +=  "<" + palavra.ToUpper() + " >";
+                    token += "< " + palavra.ToUpper() + " >";
                 }
-                if (isOperador(palavra))
+                if (isOperador(code[index].ToString()))
                 {
-                    token += "< DELOP, " + palavra.ToUpper() + " >";
+                    token += "< DELOP, " + code[index].ToString().ToUpper() + " >";
                 }
-                if (code[i] == '\n')
+                if (code[index].Equals('\n'))
                 {
-                    token += "\n";
+                    token += '\n';
                 }
-
                 index++;
-                tamanho--;
             }
 
             return token;
@@ -69,6 +72,30 @@ namespace AnalisadorLexico
         public bool isOperador(string palavra)
         {
             foreach(var item in Operador)
+            {
+                if (item == palavra)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool isOperadorRelop(string palavra)
+        {
+            foreach (var item in OperadorRelop)
+            {
+                if (item == palavra)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool isOperadorMatop(string palavra)
+        {
+            foreach (var item in OperadorMatop)
             {
                 if (item == palavra)
                 {
