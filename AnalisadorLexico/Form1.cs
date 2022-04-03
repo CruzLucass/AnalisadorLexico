@@ -22,5 +22,13 @@ namespace AnalisadorLexico
         {
             txtSaida.Text = scanner.Entrada(txtEntrada.Text);
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtEntrada.Text = "";
+            txtSaida.Text = "";
+        }
+
+
     }
 }
