@@ -21,6 +21,7 @@ namespace AnalisadorLexico
         private void btnAnalisar_Click(object sender, EventArgs e)
         {
             txtSaida.Text = scanner.Entrada(txtEntrada.Text);
+            grdTblSimbolos.DataSource = scanner.identificadorList;
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
