@@ -28,6 +28,7 @@ namespace AnalisadorLexico
         {
             txtEntrada.Text = "";
             txtSaida.Text = "";
+            grdTblSimbolos.DataSource = null;
         }
 
 
