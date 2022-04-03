@@ -19,16 +19,9 @@ namespace AnalisadorLexico
         {
             try
             {
-                string aux = "";
-                int tamanho = 0;
+                int tamanho = code.Length;
 
                 identificadorList = new List<Identificador>();
-
-                foreach (var item in code.ToCharArray())
-                {
-                    aux += item;
-                    tamanho++;
-                }
 
                 int index = 0;
                 string token = "";
