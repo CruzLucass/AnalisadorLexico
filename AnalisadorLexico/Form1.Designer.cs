@@ -46,7 +46,7 @@ namespace AnalisadorLexico
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(254, 15);
+            this.label1.Location = new System.Drawing.Point(488, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
@@ -56,16 +56,16 @@ namespace AnalisadorLexico
             // txtEntrada
             // 
             this.txtEntrada.Location = new System.Drawing.Point(27, 100);
-            this.txtEntrada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEntrada.Margin = new System.Windows.Forms.Padding(2);
             this.txtEntrada.Name = "txtEntrada";
-            this.txtEntrada.Size = new System.Drawing.Size(212, 233);
+            this.txtEntrada.Size = new System.Drawing.Size(408, 233);
             this.txtEntrada.TabIndex = 1;
             this.txtEntrada.Text = "";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(112, 84);
+            this.label2.Location = new System.Drawing.Point(205, 84);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
@@ -75,7 +75,7 @@ namespace AnalisadorLexico
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(442, 82);
+            this.label3.Location = new System.Drawing.Point(783, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
@@ -84,8 +84,8 @@ namespace AnalisadorLexico
             // 
             // txtSaida
             // 
-            this.txtSaida.Location = new System.Drawing.Point(356, 98);
-            this.txtSaida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSaida.Location = new System.Drawing.Point(590, 100);
+            this.txtSaida.Margin = new System.Windows.Forms.Padding(2);
             this.txtSaida.Name = "txtSaida";
             this.txtSaida.Size = new System.Drawing.Size(408, 233);
             this.txtSaida.TabIndex = 3;
@@ -94,18 +94,18 @@ namespace AnalisadorLexico
             // grdTblSimbolos
             // 
             this.grdTblSimbolos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTblSimbolos.Location = new System.Drawing.Point(356, 384);
-            this.grdTblSimbolos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdTblSimbolos.Location = new System.Drawing.Point(590, 403);
+            this.grdTblSimbolos.Margin = new System.Windows.Forms.Padding(2);
             this.grdTblSimbolos.Name = "grdTblSimbolos";
             this.grdTblSimbolos.RowHeadersWidth = 51;
             this.grdTblSimbolos.RowTemplate.Height = 24;
-            this.grdTblSimbolos.Size = new System.Drawing.Size(211, 180);
+            this.grdTblSimbolos.Size = new System.Drawing.Size(408, 180);
             this.grdTblSimbolos.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(409, 368);
+            this.label4.Location = new System.Drawing.Point(749, 368);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 13);
@@ -114,8 +114,8 @@ namespace AnalisadorLexico
             // 
             // btnAnalisar
             // 
-            this.btnAnalisar.Location = new System.Drawing.Point(268, 98);
-            this.btnAnalisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnalisar.Location = new System.Drawing.Point(491, 100);
+            this.btnAnalisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnalisar.Name = "btnAnalisar";
             this.btnAnalisar.Size = new System.Drawing.Size(56, 19);
             this.btnAnalisar.TabIndex = 7;
@@ -125,8 +125,8 @@ namespace AnalisadorLexico
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(268, 122);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpar.Location = new System.Drawing.Point(491, 137);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(56, 19);
             this.btnLimpar.TabIndex = 8;
@@ -139,8 +139,8 @@ namespace AnalisadorLexico
             // 
             // btnSelecionaArq
             // 
-            this.btnSelecionaArq.Location = new System.Drawing.Point(70, 360);
-            this.btnSelecionaArq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelecionaArq.Location = new System.Drawing.Point(186, 360);
+            this.btnSelecionaArq.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelecionaArq.Name = "btnSelecionaArq";
             this.btnSelecionaArq.Size = new System.Drawing.Size(113, 29);
             this.btnSelecionaArq.TabIndex = 9;
@@ -151,7 +151,7 @@ namespace AnalisadorLexico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 607);
+            this.ClientSize = new System.Drawing.Size(1079, 607);
             this.Controls.Add(this.btnSelecionaArq);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAnalisar);
@@ -162,7 +162,7 @@ namespace AnalisadorLexico
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtEntrada);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.grdTblSimbolos)).EndInit();
