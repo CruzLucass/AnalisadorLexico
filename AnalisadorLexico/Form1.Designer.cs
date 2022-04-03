@@ -46,7 +46,7 @@ namespace AnalisadorLexico
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(366, 16);
+            this.label1.Location = new System.Drawing.Point(446, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
@@ -55,17 +55,17 @@ namespace AnalisadorLexico
             // 
             // txtEntrada
             // 
-            this.txtEntrada.Location = new System.Drawing.Point(20, 81);
+            this.txtEntrada.Location = new System.Drawing.Point(11, 88);
             this.txtEntrada.Margin = new System.Windows.Forms.Padding(2);
             this.txtEntrada.Name = "txtEntrada";
-            this.txtEntrada.Size = new System.Drawing.Size(307, 190);
+            this.txtEntrada.Size = new System.Drawing.Size(408, 233);
             this.txtEntrada.TabIndex = 1;
             this.txtEntrada.Text = "";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(154, 68);
+            this.label2.Location = new System.Drawing.Point(184, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
@@ -75,7 +75,7 @@ namespace AnalisadorLexico
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(629, 66);
+            this.label3.Location = new System.Drawing.Point(734, 68);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
@@ -84,7 +84,7 @@ namespace AnalisadorLexico
             // 
             // txtSaida
             // 
-            this.txtSaida.Location = new System.Drawing.Point(442, 81);
+            this.txtSaida.Location = new System.Drawing.Point(545, 88);
             this.txtSaida.Margin = new System.Windows.Forms.Padding(2);
             this.txtSaida.Name = "txtSaida";
             this.txtSaida.Size = new System.Drawing.Size(408, 233);
@@ -94,7 +94,7 @@ namespace AnalisadorLexico
             // grdTblSimbolos
             // 
             this.grdTblSimbolos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdTblSimbolos.Location = new System.Drawing.Point(442, 382);
+            this.grdTblSimbolos.Location = new System.Drawing.Point(545, 386);
             this.grdTblSimbolos.Margin = new System.Windows.Forms.Padding(2);
             this.grdTblSimbolos.Name = "grdTblSimbolos";
             this.grdTblSimbolos.RowHeadersWidth = 51;
@@ -105,7 +105,7 @@ namespace AnalisadorLexico
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(597, 358);
+            this.label4.Location = new System.Drawing.Point(702, 358);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 13);
@@ -114,7 +114,7 @@ namespace AnalisadorLexico
             // 
             // btnAnalisar
             // 
-            this.btnAnalisar.Location = new System.Drawing.Point(368, 81);
+            this.btnAnalisar.Location = new System.Drawing.Point(459, 95);
             this.btnAnalisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnalisar.Name = "btnAnalisar";
             this.btnAnalisar.Size = new System.Drawing.Size(56, 19);
@@ -125,7 +125,7 @@ namespace AnalisadorLexico
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(368, 111);
+            this.btnLimpar.Location = new System.Drawing.Point(459, 137);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(56, 19);
@@ -140,7 +140,7 @@ namespace AnalisadorLexico
             // 
             // btnSelecionaArq
             // 
-            this.btnSelecionaArq.Location = new System.Drawing.Point(140, 292);
+            this.btnSelecionaArq.Location = new System.Drawing.Point(135, 342);
             this.btnSelecionaArq.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelecionaArq.Name = "btnSelecionaArq";
             this.btnSelecionaArq.Size = new System.Drawing.Size(113, 29);
@@ -152,7 +152,7 @@ namespace AnalisadorLexico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 567);
+            this.ClientSize = new System.Drawing.Size(1132, 567);
             this.Controls.Add(this.btnSelecionaArq);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnAnalisar);
