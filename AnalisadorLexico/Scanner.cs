@@ -10,7 +10,7 @@ namespace AnalisadorLexico
     {
         static string[] KeyWords = { "IF", "THEN", "ELSE", "WHILE", "INT", "VOID", "MAIN" };
         static string[] Operador = { "(", ")", "{", "}", ",", ";" }; //ver se a virgula é um operador
-        static string[] OperadorRelop = { "<", "<=", "=", "=>", ">", "<>", "&", "||" };
+        static string[] OperadorRelop = { "<", "=", ">", "&", "|" };
         static string[] OperadorMatop = { "+", "-", "*", "/", };
 
         public List<Identificador> identificadorList { get; set; }
@@ -66,9 +66,25 @@ namespace AnalisadorLexico
                     {
                         token += "< DELOP, " + code[index].ToString().ToUpper() + " >";
                     }
+                    //TODO - Mudar lógica na apresentação do operador duplo
                     if (isOperadorRelop(code[index].ToString()))
                     {
-                        token += "< RELOP, " + code[index].ToString().ToUpper() + " >";
+                        if(
+                            (code[index].ToString().Equals("<") && code[index + 1].ToString().Equals("=") ||
+                            (code[index].ToString().Equals(">") && code[index + 1].ToString().Equals("=") ||
+                            (code[index].ToString().Equals("<") && code[index + 1].ToString().Equals(">") ||
+                            (code[index].ToString().Equals("|") && code[index + 1].ToString().Equals("|")
+                            ) ) ) )
+                          )
+                        {
+                            token += "< RELOP, " + code[index].ToString().ToUpper() + code[index + 1].ToString().ToUpper() + " >";
+                            index++;
+                        }
+                        else
+                        {
+                            token += "< RELOP, " + code[index].ToString().ToUpper() + " >";
+                        }
+
                     }
                     if (isOperadorMatop(code[index].ToString()))
                     {
