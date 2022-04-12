@@ -163,6 +163,11 @@ namespace AnalisadorLexico
             {
                 if (char.IsDigit(palavra[0]))
                 {
+                    foreach (char item in palavra)
+                    {
+                        if (!char.IsDigit(item))
+                            return false;
+                    }
                     return true;
                 }
                 else
